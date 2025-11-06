@@ -117,15 +117,15 @@
 		<div class="stat-cards">
 			<div class="card">
 				<h2>Середня зарплата</h2>
-				<p><?php echo $avg_salary . '  грн.'; ?></p>
+				<p><?php echo number_format($avg_salary, 2, ',', ' ') . '  грн.'; ?></p>
 			</div>
 			<div class="card">
 				<h2>Мінімальна зарплата</h2>
-				<p><?php echo $min_salary . '  грн.'; ?></p>
+				<p><?php echo number_format($min_salary, 2, ',', ' ') . '  грн.'; ?></p>
 			</div>
 			<div class="card">
 				<h2>Максимальна зарплата</h2>
-				<p><?php echo $max_salary . '  грн.' ?></p>
+				<p><?php echo number_format($max_salary, 2, ',', ' ') . '  грн.' ?></p>
 			</div>
 		</div>
 
@@ -152,7 +152,7 @@
 					<td><?= $i + 1 ?></td>
 					<td><?= $e['surname'] . ' ' . $e['name'] ?></td>
 					<?php foreach ($e['salaries'] as $s) : ?>
-						<td><?= $s ?></td>
+						<td><?= number_format($s, 2, ',', ' '); ?></td>
 					<?php endforeach; ?>
 				</tr>
 			<?php endforeach; ?>
