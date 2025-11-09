@@ -1,0 +1,72 @@
+<?php
+$store_data = [
+    'flash-deals' => [
+        [
+            'id' => 1,
+            'title' => 'Свіжі Яблука',
+            'price' => 35,
+            'image' => 'assets/images/apples.jpg',
+            'timer' => '2:45:30',
+		'special-offer' => 0, // це відсоток знижки
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 2,
+            'title' => 'Солодкі Банани',
+            'price' => 45,
+            'image' => 'assets/images/banana.jpg',
+            'timer' => '1:30:15',
+		'special-offer' => 13, // це відсоток знижки
+            'currency' => 'грн/кг'
+        ],
+    ],
+    'products' => [
+        [
+            'id' => 1,
+            'title' => 'Апельсини',
+            'price' => 65,
+            'image' => 'assets/images/orange.webp',
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 2,
+            'title' => 'Ківі',
+            'price' => 75,
+            'image' => 'assets/images/kiwi.webp',
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 3,
+            'title' => 'Виноград',
+            'price' => 85,
+            'image' => 'assets/images/grapes.jpg',
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 4,
+            'title' => 'Манго',
+            'price' => 95,
+            'image' => 'assets/images/mango.jpg',
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 5,
+            'title' => 'Полуниця',
+            'price' => 120,
+            'image' => 'assets/images/strawberry.jpg',
+            'currency' => 'грн/кг'
+        ],
+        [
+            'id' => 6,
+            'title' => 'Абрикоси',
+            'price' => 80,
+            'image' => 'assets/images/apricot.jpeg',
+            'currency' => 'грн/кг'
+        ]
+    ]
+];
+
+function get_sale($price, $percent):float {
+    $price_offert = $price*(1-$percent/100);
+    return $price_offert;
+}
