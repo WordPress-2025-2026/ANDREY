@@ -19,7 +19,7 @@ function generate_password($length = 5)
     // Перемішуємо загальний масив в рандомному порядку
     shuffle($ar_pas_base);
 
-    // Обираємо потрібну кількість елементів з рандомного індексу
+    // Обираємо потрібну кількість елементів починаючи з рандомного індексу
     $ar_index_rand = rand(0, count($ar_pas_base) - $length);
     $ar_pas_five = array_slice($ar_pas_base, $ar_index_rand, $length);
 

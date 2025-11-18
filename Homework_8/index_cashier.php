@@ -12,24 +12,25 @@ echo 'ПН 304872104175' . '<br>';
 echo 'Штрих код 2999300063595' . '<br>';
 echo '========================================';
 echo '<br>';
-echo date("Y-m-d H:i:s") . '<br>';
+echo date("d-m-Y H:i:s") . '<br>';
 echo '========================================';
 echo '<br>';
 
-function total_price()
+$products = [
+    ['name' => 'Хліб', 'price' => 25],
+    ['name' => 'Молоко', 'price' => 39],
+    ['name' => 'Сир', 'price' => 120],
+    ['name' => 'Яблука', 'price' => 18],
+    ['name' => 'Ковбаса Салямі', 'price' => 180],
+    ['name' => 'Банани', 'price' => 38],
+    ['name' => 'Цукерки Ромашка', 'price' => 130],
+    ['name' => 'Масло 82,0 %', 'price' => 98],
+    ['name' => 'Цукор', 'price' => 21],
+    ['name' => 'Вода Трускавецька', 'price' => 13],
+];
+
+function total_price($products)
 {
-    $products = [
-        ['name' => 'Хліб', 'price' => 25],
-        ['name' => 'Молоко', 'price' => 39],
-        ['name' => 'Сир', 'price' => 120],
-        ['name' => 'Яблука', 'price' => 18],
-        ['name' => 'Ковбаса Салямі', 'price' => 180],
-        ['name' => 'Банани', 'price' => 38],
-        ['name' => 'Цукерки Ромашка', 'price' => 130],
-        ['name' => 'Масло 82,0 %', 'price' => 98],
-        ['name' => 'Цукор', 'price' => 21],
-        ['name' => 'Вода Трускавецька', 'price' => 13],
-    ];
     shuffle($products);
 
     $products_five = array_slice($products, 0, 5);
@@ -61,4 +62,4 @@ function total_price()
     echo 'ПДВ  20,0% :' . number_format($total_sum / 6, 2);
     echo '<br>';
 };
-total_price();
+total_price($products);
