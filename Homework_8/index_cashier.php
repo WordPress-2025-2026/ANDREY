@@ -50,11 +50,11 @@ function total_price($products)
     }
     function sum($carry, $item)
     {
-        $carry += $item;
+        $carry += $item['price'];
         return $carry;
     }
-    $products_five_price = array_column($products_five, 'price');
-    $total_sum = array_reduce($products_five_price, "sum");
+ 
+    $total_sum = array_reduce($products_five, "sum");
 
     echo '========================================';
     echo '<br>';
