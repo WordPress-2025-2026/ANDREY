@@ -8,6 +8,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="/css/styles.css">
+     <link rel="stylesheet" href="/css/media.css">
      <title>Project Noiceland </title>
  </head>
 
@@ -28,6 +29,11 @@
                              <li><a href="#">About</a></li>
                          </ul>
                      </nav>
+                     <div class="burger_menu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                  </div>
              </div>
          </header>
@@ -177,6 +183,8 @@
              </div>
          </footer>
      </div>
+     <script src="/js/app.js"></script>      
+</body>
  </body>
 
  </html>
