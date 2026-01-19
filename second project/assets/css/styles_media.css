@@ -1,0 +1,104 @@
+@media screen and (max-width: 1280px) {
+  .scroll_menu {
+    display: none;
+  }
+
+  .burger_menu {
+    display: flex;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .scroll_menu.active {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 3;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .scroll_menu ul {
+    flex-direction: column;
+  }
+
+  .slider_box {
+    min-width: 50%;
+    padding-right: 60px;
+  }
+  .slider_box_favourite {
+    min-width: 100%;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .white_brush_stroke {
+    display: none;
+  }
+  .yellow_brush_stroke {
+    display: none;
+  }
+  .baner_text_large {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .yellow_leaf {
+    display: none;
+  }
+  .slider_box {
+    min-width: 100%;
+    padding-right: 0;
+  }
+  .yellow_leaf_1 {
+    display: none;
+  }
+  .p_s_n_t_1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .p_s_n_t_2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .p_s_n_t_3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .p_s_n_t_4 {
+    margin-bottom: 20px;
+  }
+  .down_app_title {
+    font-size: 24px;
+  }
+  .download_app_img {
+    margin-top: 20px;
+  }
+  .join_shopping_title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .join_shopping_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+  }
+
+  .footer_fashion_text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .footer_wraper {
+    flex-direction: column;
+  }
+  .footer_contacts {
+    flex-direction: column;
+  }
+}
