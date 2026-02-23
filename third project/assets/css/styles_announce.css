@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 115%;
+  color: black;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1906px;
+  margin: 0 auto;
+  background-color: aquamarine;
+  /* background-color: #ffffff; */
+}
+.announce_wrapper{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin: 100px clamp(100px, 10.5vw, 200px);
+gap: 70px;
+}
+.announce_text{
+display: flex;
+flex-direction: column;
+gap: 10px;
+color: #171717;
+}
+.announce_text_title{
+    font-size: 42px;
+    font-weight: 600;    
+}
+.announce_text_text{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;    
+}
+.announce_form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+  width: 100%;
+}
+.announce_form_title{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -1px;  
+  color: black;
+}
+.announce_form_input{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+    justify-content: space-between;
+    gap: 6.3%;
+    row-gap: 20px;
+}
+.announce_form_input input{
+  width: 100%;
+  max-width: 422px;
+padding: 11px 20px;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: -1px;  
+color: #00000083;
+border-radius: 8px;
+border: 1px solid #00000083;
+}
+.button_left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.button_left button{
+  padding: 11px 63px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -1px;  
+  color: black;
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  }
+  .button_left p{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -1px;  
+    color: black;  
+  }
+
+  .button_r button{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 115%;
+    letter-spacing: -1px; 
+    color: #fff7f7;
+    border: 1px solid #171717;
+    background-color: #171717;
+    border-radius: 8px;
+    width: 100%;
+    padding: 11px 105px;
+    cursor: pointer;
+  }
+  .announce_form_check {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-top: 40px;
+  }
+  .announce_check_check input {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .announce_check_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 115%;
+    color: #0c0c0c;
+  }

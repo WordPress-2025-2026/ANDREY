@@ -1,0 +1,38 @@
+@media screen and (max-width: 750px) {
+    .header_wrapper {
+      padding: 60px 8% 60px 8%;
+    }
+    .scroll_menu {
+      display: none;
+    }
+    .burger_menu {
+      display: flex;
+    }
+    .header {
+      position: relative;
+    }
+    .logo {
+      display: none;
+    }
+    .logo_burger {
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+    }
+    .scroll_menu.active {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      display: flex;
+      background-color: #ffffff;
+      width: 100%;
+      z-index: 3;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .scroll_menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+}  

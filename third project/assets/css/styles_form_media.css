@@ -1,0 +1,25 @@
+@media screen and (max-width: 750px) {
+  .forms {
+    padding: 50px 13.3%;
+  }
+  .forms_title {
+    font-size: 35px;
+  }
+  .forms_description {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .forms_blank {
+    padding: 50px 6.67%;
+  }
+  .blank_input {
+    gap: 25px;
+  }
+  .blank_input input {
+    max-width: 46%;
+  }
+  .blank_input button {
+    max-width: 100%;
+  }
+  
+}

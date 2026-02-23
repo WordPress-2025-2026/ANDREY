@@ -1,0 +1,36 @@
+@media screen and (max-width: 1145px) {
+  .announce_form_input input{
+    max-width: 215px;  
+}
+}
+
+  @media screen and (max-width: 900px) {  
+    .button_r{
+    width: 100%;    
+    }  
+  }
+
+@media screen and (max-width: 750px) {
+  .announce_wrapper{
+    margin: 50px clamp(20px, 10.5vw, 100px);
+    gap: 50px;
+    }
+    .announce_form_check {
+    padding-top: 0px;
+    }
+
+  }
+  
+  @media screen and (max-width: 530px) {
+    .announce_text_title{
+      line-height: 1.2;  
+    
+    }
+    .button_left{
+    flex-direction: column;    
+    }
+  
+  
+  
+  }
+

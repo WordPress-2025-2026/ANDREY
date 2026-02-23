@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: 115%;
+  color: black;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 1906px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* main Start */
+
+.home_screen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.home_screen_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 224px 0 94px 10.5%;
+}
+.home_screen_title p {
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -5px;
+  font-size: clamp(30px, 5.5vw, 105px);
+}
+.home_screen_button a {
+  background-color: black;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: clamp(15px, 2vw, 23px);
+  line-height: 115%;
+  letter-spacing: -5%;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 8px 20px 8px 30px;
+}
+.arrow_down {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.models {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 14.7% 50px 14.7%;
+  gap: 50px;
+}
+.models_title p {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+}
+.models_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px;
+  row-gap: 40px;
+}
+.models_ {
+  position: relative;
+}
+.model_img img {
+  display: block;
+  border-radius: 25px;
+}
+.model_button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 20px 20px 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 115%;
+  color: #ffffff;
+}
+.model_button_arrow a {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 115%;
+  color: #ffffff;
+  text-decoration: none;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 14.7%;
+  gap: 50px;
+}
+.forms_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.forms_title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+}
+.forms_description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 115%;
+}
+.forms_blank {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 91px 3.7% 91px 3.7%;
+}
+.blank_input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.blank_input input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 115%;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  padding: 13px 15px;
+  max-width: 178px;
+}
+.blank_input button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 115%;
+  color: #ffffff50;
+  border: 1px solid #000000;
+  background-color: #000000;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 178px;
+  padding: 13px 15px;
+  cursor: pointer;
+}
+.blank_check {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.blank_check_check input {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.blank_check_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 115%;
+}
+.destaque_semanal {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 14.7%;
+  gap: 50px;
+}
+.dest_sem_title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+}
+
+.dest_sem_img_text {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.dest_sem_img {
+  flex: 0 0 64%;
+}
+
+.dest_sem_img img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.dest_sem_text {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-image: url(/assets/images/Text\ Macan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 65px 5.2%;
+  gap: 30px;
+}
+.dest_sem_text_title {
+  font-weight: 600;
+
+  line-height: 115%;
+  color: #ffffff;
+}
+.dest_sem_text_title p {
+  font-size: clamp(15px, 2vw, 22px);
+}
+.dest_sem_text_text p {
+  font-weight: 500;
+  font-size: clamp(10px, 1vw, 20px);
+  line-height: initial;
+  color: #ffffff;
+  height: 100%;
+  text-align: justify;
+}
+
+/* main Finish */
+

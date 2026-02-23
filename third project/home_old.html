@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,
+      500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,
+      wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />  
+    <link rel="stylesheet" href="assets/css/styles_home.css" />
+    <link rel="stylesheet" href="assets/css/styles_home_media.css" />   
+    <title>Touring Cars</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <link rel="stylesheet" href="assets/css/styles_header.css" />
+        <link rel="stylesheet" href="assets/css/styles_header_media.css" />
+        <div class="container">
+          <div class="header_wrapper">
+            <div class="burger_menu">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="logo_burger">
+              <img src="/assets/images/tclogo 1.png" alt="logo burger" />
+            </div>
+            <div class="logo">
+              <img src="/assets/images/logo.png" alt="logo" />
+            </div>
+            <div class="scroll_menu">
+              <ul>
+                <li class="buttonAbout"><a href="#">Sobre</a></li>
+                <li class="buttonContact"><a href="#">Contato</a></li>
+                <li class="buttonAnnounce"><a href="#">Anunciar</a></li>
+                <li class="buttonStock"><a href="#">Estoque</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script>
+          let burger = document.querySelector('.burger_menu');
+          // let logo = document.querySelector('logo');
+          let menuOpen = document.querySelector('.scroll_menu');
+          // let burLogo = document.querySelector('logo_burger');
+          burger.addEventListener('click', function() {
+          menuOpen.classList.toggle('active');
+          // burLogo.classList.toggle('active');
+          // logo.classList.toggle('active');
+          })
+
+          let buttonImg = document.querySelector('.button_img');
+              let buttonData = document.querySelector('.button_datasheet');
+              let buttonDetails = document.querySelector('.button_details');
+              let infImg = document.querySelector('.inform_poster_img');
+              let infData = document.querySelector('.inform_poster_datasheet');
+              let infDetails = document.querySelector('.inform_poster_details');
+              infImg.classList.add('active_1');
+              buttonImg.classList.add('active_1');
+              
+              buttonImg.addEventListener('click', function() {
+                infImg.classList.add('active_1');    
+                infData.classList.remove('active_2');
+                infDetails.classList.remove('active_3');
+
+                buttonImg.classList.add('active_1');    
+                buttonData.classList.remove('active_2');
+                buttonDetails.classList.remove('active_3');                
+              })
+              buttonData.addEventListener('click', function() {
+                infImg.classList.remove('active_1');    
+                infData.classList.add('active_2');
+                infDetails.classList.remove('active_3');  
+                
+                buttonImg.classList.remove('active_1');    
+                buttonData.classList.add('active_2');
+                buttonDetails.classList.remove('active_3');                
+              })
+              buttonDetails.addEventListener('click', function() {
+                infImg.classList.remove('active_1');    
+                infData.classList.remove('active_2');
+                infDetails.classList.add('active_3'); 
+
+                buttonImg.classList.remove('active_1');    
+                buttonData.classList.remove('active_2');
+                buttonDetails.classList.add('active_3'); 
+              })
+
+
+
+
+        </script>
+      </header>
+      <main>
+        <div class="container">
+          <section class="home_screen">
+            <div class="home_screen_text">
+              <div class="home_screen_title">
+                <p>Qualidade,<br>Segurança,<br>Transparência.</p>
+              </div>
+              <div class="home_screen_button">
+                <a href="#"
+                  >Acessar estoque completo
+                  <span style="font-size: 25px">></span></a
+                >
+              </div>
+            </div>
+            <div class="home_screen_img">
+              <img
+                src="/assets/images/porsche_model_i5.png"
+                alt="porsche_model_i5"
+              />
+            </div>
+          </section>
+          <section class="arrow_down">
+            <a href="#footer">
+              <img
+                src="/assets/images/keyboard_arrow_down.png"
+                alt="arrow_down"
+              />
+            </a>
+          </section>
+          <section class="models">
+            <div class="models_title">
+              <p>Modelos</p>
+            </div>
+            <div class="models_img">
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/Combustion.png" alt="Combustion" />
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>A combustão</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">></a>
+                  </div>
+                </div>
+              </div>
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/Hybrid.png" alt="Hybrid" />
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>Híbrido</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">></a>
+                  </div>
+                </div>
+              </div>
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/Eletric.png" alt="Eletric" />
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>Elétrico</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="forms">
+            <div class="forms_text">
+              <div class="forms_title">
+                <p>Você está procurando<br>algum modelo em específico?</p>
+              </div>
+              <div class="forms_description">
+                <p>
+                  Deixe seu contato para que a nossa equipe entre em contato com
+                  você!
+                </p>
+              </div>
+            </div>
+            <div class="forms_blank">
+              <div class="blank_input">
+                <input
+                  type="text"
+                  id="Modelo"
+                  size="27"
+                  name="Modelo"
+                  placeholder="Modelo"
+                />
+                <input
+                  type="text"
+                  id="Nome"
+                  size="27"
+                  name="Nome"
+                  placeholder="Nome"
+                />
+                <input
+                  type="email"
+                  id="E_mail"
+                  size="27"
+                  name="E_mail"
+                  placeholder="E-mail"
+                />
+                <input
+                  type="text"
+                  id="Numero"
+                  size="27"
+                  name="Numero"
+                  placeholder="Número"
+                />
+                <button>Enviar</button>
+              </div>
+              <div class="blank_check">
+                <div class="blank_check_check">
+                  <input type="checkbox" />
+                </div>
+                <div class="blank_check_text">
+                  <p>
+                    De acordo com a LGPD, concordo em fornecer os dados acima
+                    para que a Touring Cars entre em contato comigo para
+                    apresentar serviços. Seu nome, e-mail e telefone serão
+                    usados de acordo com a nossa Política de Privacidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="destaque_semanal">
+            <div class="dest_sem_title">
+              <p>Destaque semanal</p>
+            </div>
+            <div class="dest_sem_img_text">
+              <div class="dest_sem_img">
+                <img src="/assets/images/Macan.jpg" alt="Macan" />
+              </div>
+              <div class="dest_sem_text">                
+                <div class="dest_sem_text_title">
+                  <p>Novo Porsche Macan GTS.</p>
+                </div>
+                <div class="dest_sem_text_text">
+                  <p>Novo Macan GTS: destaque nos aspectos em que os outros se perdem na multidão. Jovem,
+                     dinâmico e urbano, com equipamentos de série completos, características de design exclusivas do modelo e,
+                      é claro, o tradicional desempenho Porsche.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="models">
+            <div class="models_title">
+              <p>Últimas vendas</p>
+            </div>
+            <div class="models_img">
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/RAM.jpg" alt="RAM" /
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>Ram 1500</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">√</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/SW4.jpg" alt="SW4" />
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>Toyota SW4</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">√</a>
+                  </div>
+                </div>
+              </div>
+              <div class="models_">
+                <div class="model_img">
+                  <img src="/assets/images/SEA-DOO.jpg" alt="SEA-DOO" />
+                </div>
+                <div class="model_button">
+                  <div class="model_buttom_tex">
+                    <p>Sea-Doo Gti</p>
+                  </div>
+                  <div class="model_button_arrow">
+                    <a href="#">√</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>          
+        </div>
+      </main>
+      <footer>
+        <link rel="stylesheet" href="assets/css/styles_footer.css" />
+<link rel="stylesheet" href="assets/css/styles_footer_media.css" />   
+        <div class="container">
+          <div id="footer"  class="footer_wrapper">
+            <div class="footer_logo">
+              <div class="logo_img">
+                <img src="/assets/images/Logo.png" alt="logo">
+              </div>
+              <div class="footer_logo_text">
+                <p>Qualidade, Segurança, Transparência.</p>
+              </div>
+              <div class="footer_logo_social">
+                <a href="#"><img src="/assets/images/insta 1.png" alt="instagram"></a>
+                <a href="#"><img src="/assets/images/face 1.png" alt="facebook"></a>
+                <a href="#"><img src="/assets/images/youtube 1.png" alt="youtube"></a>
+                <a href="#"><img src="/assets/images/whatsapp 1.png" alt="whatsapp"></a>
+              </div>
+            </div>
+            <div class="footer_contato">
+              <ul>
+                <li style="font-weight: 600; font-size: 20px; letter-spacing: 1.5px;" >Contato</li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">contato@touringcars.com.br</a></li>
+                <li><a href="#">(81) 3512-9411</a></li>
+              </ul>
+            </div>
+            <div class="footer_input">
+              <div class="footer_input_title">
+                <p>Inscreva-se</p>
+              </div>
+              <div class="footer_input_text">
+                <p>Informe seu email para receber as últimas novidades da Touring Cars.</p>
+              </div>
+              <div class="footer_input_input">                
+                  <input type="email" size="9" placeholder="E-mail"/>
+                  <button>
+                    <img src="/assets/images/arrowright.png" alt="arrowright">
+                  </button>                
+              </div>              
+            </div>
+          </div>  
+          <div class="footer_license">
+            <p>©️ 2024 Todos os direitos reservados.</p>
+          </div>
+        </div>        
+      </footer>
+    </div>
+  </body>
+</html>

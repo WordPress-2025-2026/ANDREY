@@ -1,0 +1,74 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 14.7%;
+  gap: 50px;
+}
+.forms_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.forms_title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+}
+.forms_description {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 115%;
+}
+.forms_blank {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 91px 3.7% 91px 3.7%;
+}
+.blank_input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.blank_input input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 115%;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  padding: 13px 15px;
+  max-width: 178px;
+}
+.blank_input button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 115%;
+  color: #ffffff50;
+  border: 1px solid #000000;
+  background-color: #000000;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 178px;
+  padding: 13px 15px;
+  cursor: pointer;
+}
+.blank_check {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.blank_check_check input {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.blank_check_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 115%;
+}

@@ -1,0 +1,17 @@
+@media screen and (max-width: 750px) {
+    .footer_wrapper {
+        margin: 70px 9.33% 0 9.33%;
+        row-gap: 66px;
+        flex-direction: column;
+      }
+      .footer_logo {
+        gap: 30px;
+      }
+      .footer_contato li {
+        margin-bottom: 20px;
+      }
+      .footer_input {
+        gap: 20px;
+      }
+    }
+   
