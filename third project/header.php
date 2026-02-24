@@ -5,9 +5,9 @@
     <div class="container">
         <div class="header_wrapper">
             <div class="burger_menu">
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="burger_1"></div>
+                <div class="burger_2"></div>
+                <div class="burger_3"></div>
             </div>
             <div class="logo_burger">
                 <a href="home.php">
@@ -32,8 +32,14 @@
     <script>
         let burger = document.querySelector('.burger_menu');
         let menuOpen = document.querySelector('.scroll_menu');
+        let burgerOne = document.querySelector('.burger_1');
+        let burgerTwo = document.querySelector('.burger_2');
+        let burgerThree = document.querySelector('.burger_3');
         burger.addEventListener('click', function() {
             menuOpen.classList.toggle('active');
-        })   
+            burgerOne.classList.toggle('active');
+            burgerTwo.classList.toggle('active');
+            burgerThree.classList.toggle('active');
+        })
     </script>
 </header>
