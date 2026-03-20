@@ -87,9 +87,8 @@ $data        = require_once 'data_stock.php';
                                 <div class="img_number">1</div>
                                 <div class="img_number_middle">/</div>
                                 <div class="img_number_all"></div>
-                                <button class="prev-button">
-                                    << /button>
-                                        <button class="next-button">></button>
+                                <button class="prev-button"><</button>
+                                <button class="next-button">></button>
                             </div>
                             <script>
                                 const slider = document.querySelector(".slider");
@@ -100,8 +99,9 @@ $data        = require_once 'data_stock.php';
                                 let screenWidth = window.screen.width;
                                 let trIndex;
                                 screenWidth > 749 ? (trIndex = 87.25) : (trIndex = 100);
-
-                                // console.log("Разрешение экрана:", screenWidth);
+                                // trIndex =100;
+                                console.log("Разрешение экрана:", screenWidth);
+                                console.log("Індех:", trIndex);
 
                                 prevButton.addEventListener("click", () => {
                                     slideIndex =
